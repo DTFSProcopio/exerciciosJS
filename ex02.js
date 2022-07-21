@@ -20,12 +20,15 @@ let products = [
   { name: "Gamepad", price: 30, quantity: 25, colors: ["black", "silver"] },
   { name: "Monitor", price: 200, quantity: 3, colors: [] },
 ];
+console.log("All Products with 'id' attached:");
 let id = 0;
 products = products.map((element) => {
   id++;
   return { id, ...element };
 });
-products.forEach((element) => console.log(element));
+console.log();
+console.log("All products names:");
+products.forEach((element) => console.log(element.name));
 
 console.log();
 console.log("ID 3 : ");
